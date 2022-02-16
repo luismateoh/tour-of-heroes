@@ -1,9 +1,9 @@
 # Tour of Heroes
 To deploy this project on Docker, you need to run the following command:
 
-````aidl
+```
 docker-compose up
-````
+```
 ![Screenshot1](Images/Screenshot.png)
 
 --- 
