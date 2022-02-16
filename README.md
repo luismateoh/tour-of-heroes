@@ -4,7 +4,7 @@ To deploy this project on Docker, you need to run the following command:
 ````aidl
 docker-compose up
 ````
-![Screenshot1](images/Screenshot.png)
+![Screenshot1](Images/Screenshot.png)
 
 --- 
 
@@ -18,6 +18,6 @@ docker-compose up
 
 --- 
 
-![Screenshot2](images/Screenshot2.png)
-![Screenshot3](images/Screenshot3.png)
-![Screenshot4](images/Screenshot4.png)
+![Screenshot2](Images/Screenshot2.png)
+![Screenshot3](Images/Screenshot3.png)
+![Screenshot4](Images/Screenshot4.png)
