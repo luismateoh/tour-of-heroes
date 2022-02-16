@@ -1,0 +1,33 @@
+spring:
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true
+    hibernate:
+      default_schema: public
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO}
+    properties:
+      hibernate:
+        order_inserts: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          batch_size: 50
+          lob:
+            non_contextual_creation: true
+        temp:
+          use_jdbc_metadata_defaults: false
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: ${SPRING_DATASOURCE_URL}
+    driver-class-name: org.postgresql.Driver
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+    data: classpath:/data.sql
+    hikari:
+      idle-timeout: 10000
+      maximum-pool-size: 5
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
